@@ -1,0 +1,21 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-green-1: #D4E09B;
+    --light-green-2: #CBDFBD;
+    --light: #F6F4D2;
+    --light-orange: #F19C79;
+    --orange: #A44A3F;
+}
+
+.bg-image {
+    height: 100wh;
+
+    background-image: url("./stacked-peaks-haikei.svg");
+    background-repeat: no-repeat;
+    aspect-ratio: 16/9;
+}
