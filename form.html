@@ -4,50 +4,78 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="./form.js" defer></script>
         <title>Sign-up Form</title>
     </head>
     <body>
         <div class="page-layout">
             <div class="bg-image"></div>
-            <div class="main-container">
-                <div class="hero">
-                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italic">now</span> to get started.</p>
-                    <p>You <span class="italic">know</span> you want to.</p>
-                </div>
-                <div class="form-container">
-                    <form method="post" action="">
-                        <div class="form-content">
-                            <h1>Let's do this!</h1>
-                            <div class="form-group">
-                                <label for="">First Name</label>
-                                <input type="text">
+            <div class="main-wrapper">
+                <div class="main-container">
+                    <div class="hero">
+                        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br />Sign up <span class="italic">now</span> to get started.</p>
+                        <p>You <span class="italic">know</span> you want to.</p>
+                    </div>
+                    <div class="form-container">
+                        <form id="form" action="#">
+                            <div class="form-wrapper">
+                                <h1>Let's do this!</h1>
+                                <div class="form-content">
+                                    <div class="form-group">
+                                        <div class="label-wrapper">
+                                            <label for="f-name">First Name</label>
+                                            <div class="essential"></div>
+                                        </div>
+                                        <input type="text" id="f-name">
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="label-wrapper">
+                                            <label for="l-name">Last Name</label>
+                                        </div>
+                                        <input type="text" id="l-name">
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="label-wrapper">
+                                            <label for="email">Email</label>
+                                            <div class="essential"></div>
+                                        </div>
+                                        <input type="text" id="email">
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="label-wrapper">
+                                            <label for="phone-num">Phone Number</label>
+                                        </div>
+                                        <input type="text" id="phone-num">
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="label-wrapper">
+                                            <label for="pass">Password</label>
+                                            <div class="essential"></div>
+                                        </div>
+                                        <input type="text" id="pass">
+                                        <div class="error"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="label-wrapper">
+                                            <label for="pass-confirm">Confirm Password</label>
+                                            <div class="essential"></div>
+                                        </div>
+                                        <input type="text" id="pass-confirm">
+                                        <div class="error"></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="">Last Name</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Email</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Phone Number</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Password</label>
-                                <input type="text">
-                            </div>
-                            <div class="form-group">
-                                <label for="">Confirm Password</label>
-                                <input type="text">
-                            </div>
-                        </div>
-                        <button>Create Account</button>
-                    </form>
-                </div>
-                <div class="log-in">
-                    <p>Already have an account? <a href="">Log in</a></p>
+                            <button type="submit">Create Account</button>
+                        </form>
+                    </div>
+                    <div class="log-in">
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
                 </div>
             </div>
         </div>
